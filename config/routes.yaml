@@ -1,0 +1,29 @@
+_pimcore:
+    resource: "@PimcoreCoreBundle/Resources/config/routing.yml"
+
+app:
+    resource: "../src/Controller/"
+    type: annotation
+# controllers:
+#     resource:
+#         path: ../src/Controller/
+#         namespace: App\Controller
+#     type: attribute
+
+################# DATA CREATION #####################
+create-trial:
+    path: /createTrial
+    controller: App\Controller\ObjectCreateController::createObj
+    methods: POST
+
+################# DATA CONSUMPTION ####################
+
+filter-get:
+    path: /filterGet
+    controller: App\Controller\ConsumeController::filterGet
+    methods: GET
+
+filter-post:
+    path: /filterPost
+    controller: App\Controller\ConsumeController:filterPost
+    methods: POST
