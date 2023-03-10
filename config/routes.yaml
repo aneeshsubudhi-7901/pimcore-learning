@@ -27,3 +27,15 @@ filter-post:
     path: /filterPost
     controller: App\Controller\ConsumeController:filterPost
     methods: POST
+
+################# DATA CONSUMPTION WITH ENCRYPTION - AES####################
+
+filter-get-enc:
+    path: /filterGetEnc
+    controller: App\Controller\ConsumeEncryptController::filterGetEnc
+    methods: GET
+
+filter-post-enc:
+    path: /filterPostEnc
+    controller: App\Controller\ConsumeEncryptController:filterPostEnc
+    methods: POST

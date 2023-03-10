@@ -8,6 +8,7 @@
     "process-timeout": 0
   },
   "require": {
+    "phpseclib/phpseclib": "~3.0",
     "pimcore/pimcore": "^10.5"
   },
   "require-dev": {
